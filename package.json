@@ -1,0 +1,63 @@
+{
+  "name": "why-violet-worlds",
+  "version": "1.0.0",
+  "description": "Worlds show",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo Not tested yet",
+    "start": "node --optimize_for_size --max_old_space_size=460 --gc_interval=100 index.js",
+    "dev": "nodemon index.js",
+    "docs": "bash generate-docs.sh",
+    "coverage-test": "nyc --reporter=lcov --reporter=text-lcov cucumber-js -r features/",
+    "coverage-report": "nyc --reporter=lcov --reporter=text-lcov npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/why-violet/worlds.git"
+  },
+  "keywords": [
+    "why",
+    "violet"
+  ],
+  "author": "Kendell Joseph",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/why-violet/worlds/issues"
+  },
+  "homepage": "https://github.com/why-violet/worlds#readme",
+  "dependencies": {
+    "arc.extension-api": "^1.1.0",
+    "arcms": "^1.2.4",
+    "axios": "^0.18.0",
+    "body-parser": "^1.18.3",
+    "colors": "^1.3.1",
+    "dotenv": "^6.0.0",
+    "express": "^4.16.3",
+    "express-list-endpoints": "^3.0.1",
+    "generic-pool": "^3.4.2",
+    "mongodb": "^3.1.3",
+    "morgan": "^1.9.0",
+    "neo4j-driver": "^1.6.3",
+    "request": "^2.88.0",
+    "underscore": "^1.9.1",
+    "vue": "^2.5.17",
+    "vue-axios": "^2.1.3"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "css-loader": "^1.0.0",
+    "cucumber": "^4.2.1",
+    "docco": "^0.8.0",
+    "mocha": "^5.2.0",
+    "node-sass": "^4.9.3",
+    "nodemon": "^1.18.3",
+    "nyc": "^12.0.2",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.22.1",
+    "webpack": "^4.17.1",
+    "webpack-cli": "^3.1.0"
+  }
+}
